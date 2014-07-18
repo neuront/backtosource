@@ -1,0 +1,23 @@
+{  
+  "name": "BackToSource",
+  "version": "0.1.0",
+  "description": "Back to source site.",
+  "browser_action": {
+    "default_title": "Back to Source Site"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://it.taocms.org/*"],
+      "js": ["taocms.js"]
+    },
+    {
+      "matches": ["http://www.tuicool.com/articles/*"],
+      "js": ["tuicool.js"]
+    },
+    {
+      "matches": ["http://ju.outofmemory.cn/entry/*"],
+      "js": ["outofmemory.js"]
+    }
+  ],
+  "manifest_version": 2
+}
